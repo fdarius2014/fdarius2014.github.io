@@ -369,7 +369,7 @@ body.loaded #preloader{
     color: #f8f8f8;
     letter-spacing: 4px;
     font-size: 15px;
-	margin-top: -120px;
+	margin-top: 40px;
 	margin-bottom: 20px;
 }
 
@@ -1917,7 +1917,7 @@ ul.portfolio li.active {
 }
 .scroll-btn {
     display: block;
-    position: absolute;
+    position: relative;
     left: 0;
     right: 0;
     text-align: center;
@@ -1977,13 +1977,6 @@ ul.portfolio li.active {
     animation: ani-mouse 2.5s linear infinite;
 }
 
-#left {
-    float: left;
-}
-
-#right {
-    float: right;
-}
 
 .progress {
     height: 20px;
