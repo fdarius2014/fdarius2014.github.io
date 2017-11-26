@@ -369,7 +369,7 @@ body.loaded #preloader{
     color: #f8f8f8;
     letter-spacing: 4px;
     font-size: 15px;
-	margin-top: 40px;
+	margin-top: -120px;
 	margin-bottom: 20px;
 }
 
@@ -1921,7 +1921,7 @@ ul.portfolio li.active {
     left: 0;
     right: 0;
     text-align: center;
-    bottom: -210px;
+    margin-top: 160px;
 }
 
 .scroll-btn p {
@@ -1987,8 +1987,9 @@ ul.portfolio li.active {
 
 .progress {
     height: 20px;
-    width: 100%;
-    margin: 1.2em;
+    width: 90%;
+    margin: 1.7em auto;
+    margin-left: 15px;
     overflow: hidden;
     background-color: #f7f7f7;
     background-image: -moz-linear-gradient(top, #f5f5f5, #f9f9f9);
