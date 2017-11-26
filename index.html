@@ -33,6 +33,10 @@
     
     <!-- Google Web Fonts  -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700">
+
+      <!-- JQUERY and Sweet alert -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.5/sweetalert2.css">
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.5/sweetalert2.min.js"></script>
     
     
     <!-- HTML5 shiv and Respond.js support IE8 or Older for HTML5 elements and media queries -->
@@ -647,35 +651,36 @@
            <div class="col-md-6">   
                  
                <div class="row">
-                  <form>
+                  <form role="form" action="" id="contact-form" method="post">
                     
 					  <div class="col-sm-6">
 						<div class="form-group">
-						  <input type="text" id="name" class="form-control" placeholder="Your Name">
+						  <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
 						 </div>
                         </div>
 								
                        <div class="col-sm-6">
 					    <div class="form-group">
-						 <input type="email" id="email" class="form-control" placeholder="Your Email">
+						 <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required>
 						 </div>
                         </div>
                         
                         <div class="col-sm-6">
 						  <div class="form-group">
-							<input type="text" id="website" class="form-control" placeholder="Your Phone Number">
+							<input type="text" id="phoneNumber" name="phoneNumber" class="form-control" placeholder="Your Phone Number">
 						   </div>
                           </div>
                           
                         <div class="col-sm-6">
 						  <div class="form-group">
-							<input type="text" id="address" class="form-control" placeholder="Your Address">
+							<input type="text" id="address" name="address" class="form-control" placeholder="Your Address">
 						   </div>
                           </div>
 								
                          <div class="col-sm-12">
-						  <select id="subject" class="form-group form-control">
+						  <select id="subject" name="subject" class="form-group form-control">
 							<option value="" selected disabled>Subject</option>
+                            <option>Prospective Candidate for hire</option>
 							<option>Website Design</option>
 							<option>Web Application Development</option>
                             <option>iOS Development</option>
@@ -685,15 +690,15 @@
                           </div>
 								
                        <div class="col-sm-12">
-					    <div class="textarea-message form-group">
-					      <textarea id="message" class="textarea-message form-control" placeholder="Your Message" rows="5"></textarea>
-						  </div>
-                         </div>
+                           <div class="textarea-message form-group">
+                               <textarea id="message" name="message" class="textarea-message form-control" placeholder="Your Message" rows="5" required></textarea>
+                           </div>
+                       </div>
 
 
-                    <div class="text-center">      
-		   <button type="submit" class="button button-style button-style-dark button-style-icon fa fa-long-arrow-right text-center">Submit</button>
-	                  </div>
+                        <div class="text-center">
+                            <button type="submit" id="submit" name="submit" value="Submit" class="button button-style button-style-dark button-style-icon fa fa-long-arrow-right text-center">Submit</button>
+	                    </div>
                        
                   </form>
                    
